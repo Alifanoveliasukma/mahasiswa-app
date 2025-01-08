@@ -1,11 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Perhatikan perubahan ini
+import ReactDOM from 'react-dom/client'; // Mengimpor dari 'react-dom/client'
+//import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 
+//BrowserRouter dari react-router
+import { BrowserRouter } from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.getElementById('root')); // Membuat root
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
